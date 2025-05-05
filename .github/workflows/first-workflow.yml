@@ -1,0 +1,13 @@
+name: first workflow
+on:
+  push:
+    branches:
+      - "main"
+jobs: 
+  fist-job:
+    name: job no.1 
+    runs-on: ubuntu-latest
+    steps:
+      - name: run command 
+        run: echo "Fisrt WorkFlow"
+        shell: bash
